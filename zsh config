@@ -18,3 +18,4 @@ RPROMPT="%F{111}%K{000}[%D{%f/%m/%y}|%@]"
     alias ll='ls -alF'
     alias la='ls -A'
     alias l='ls -CF'
+    alias nano='nano -m'
