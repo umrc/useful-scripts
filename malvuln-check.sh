@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ "$1" != "" ]; then
     echo
-    echo "The md5 has of the file is: $(md5sum $1)"
+    echo "The md5 hash of the file is: $(md5sum $1)"
     echo
     echo "Downloading the malware report if exist"
     echo
@@ -12,7 +12,7 @@ if [ "$1" != "" ]; then
             printf -v input "$(eval echo "$input")"
             if [ "$input" != "" ]; then
                 echo
-                echo "The md5 has of the file is: $(md5sum $input)"
+                echo "The md5 hash of the file is: $(md5sum $input)"
                 echo
                 echo "Downloading the malware report if exist"
                 echo
