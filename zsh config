@@ -19,3 +19,12 @@ RPROMPT="%F{111}%K{000}[%D{%f/%m/%y}|%@]"
     alias la='ls -A'
     alias l='ls -CF'
     alias nano='nano -m'
+
+#highlighting https://github.com/zsh-users/zsh-syntax-highlighting
+
+# Basic auto/tab complete:
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
